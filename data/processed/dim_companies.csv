@@ -1,0 +1,47 @@
+company_name,company_id
+Scale AI,COMP_001
+DataRobot,COMP_002
+Meta AI,COMP_003
+Confluent,COMP_004
+Amazon Web Services,COMP_005
+NVIDIA,COMP_006
+Tesla,COMP_007
+Microsoft,COMP_008
+MongoDB,COMP_009
+OpenAI,COMP_010
+Cloudflare,COMP_011
+Uber,COMP_012
+Palantir,COMP_013
+SpaceX,COMP_014
+Databricks,COMP_015
+Elastic,COMP_016
+Anthropic,COMP_017
+Airbnb,COMP_018
+Stripe,COMP_019
+Snowflake,COMP_020
+Google DeepMind,COMP_021
+Mistral AI,COMP_022
+AWS,COMP_023
+Amazon Web Services (AWS),COMP_024
+Perplexity AI,COMP_025
+Cohere,COMP_026
+Microsoft Azure,COMP_027
+Azure,COMP_028
+DeepMind,COMP_029
+Google Deepmind,COMP_030
+Meta AI Research,COMP_031
+Facebook AI Research,COMP_032
+xAI,COMP_033
+Nvidia,COMP_034
+NVIDIA Corporation,COMP_035
+Open AI,COMP_036
+OpenAI Inc.,COMP_037
+Databricks Inc.,COMP_038
+Snowflake Inc.,COMP_039
+CloudFlare,COMP_040
+Data Robot,COMP_041
+Mongo DB,COMP_042
+Palantir Technologies,COMP_043
+The Boring Company / SpaceX,COMP_044
+Stripe Inc.,COMP_045
+Hugging Face,COMP_046
