@@ -5,7 +5,7 @@ This document outlines the architectural design, schema modeling, lineage tracki
 
 ## 2. Data Modeling Strategy (Dimensional Modeling)
 - **Dimension Table (dim_companies)**: One row per unique canonical company, storing master attributes like industry, employee count, headquarters, and public status.
-- **Fact Table (ct_arr_observations)**: One row per article publication representing a reported ARR observation over time, maintaining lineage by preserving raw revenue strings alongside normalized USD values.
+- **Fact Table (fct_arr_observations)**: One row per article publication representing a reported ARR observation over time, maintaining lineage by preserving raw revenue strings alongside normalized USD values.
 
 ## 3. Pipeline Lifecycle & Ingestion
 1. **Cleaning**: Normalizes multi-format dates, handles revenue ranges via midpoints, and converts international currencies (EUR, GBP, JPY) to USD.

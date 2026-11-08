@@ -20,21 +20,21 @@ def validate_dataset():
     if "category" in df.columns:
         invalid_categories = df[~df["category"].str.contains("AI", case=False, na=False)]
         if len(invalid_categories) > 0:
-            print(f"❌ Validation Failed: Found {len(invalid_categories)} rows not related to AI/ML.")
+            print(f"Validation Failed: Found {len(invalid_categories)} rows not related to AI/ML.")
         else:
-            print("✅ Check 1 Passed: All rows belong to the AI_ML category taxonomy.")
+            print("Check 1 Passed: All rows belong to the AI_ML category taxonomy.")
     else:
-        print("⚠️ Warning: 'category' column missing from export.")
+        print("Warning: 'category' column missing from export.")
 
     # Check 2: Year Filtering (2022-2024)
     if "year" in df.columns:
         invalid_years = df[~df["year"].isin([2022, 2023, 2024])]
         if len(invalid_years) > 0:
-            print(f"❌ Validation Failed: Found {len(invalid_years)} rows outside years 2022-2024. Years found: {df['year'].unique()}")
+            print(f"Validation Failed: Found {len(invalid_years)} rows outside years 2022-2024. Years found: {df['year'].unique()}")
         else:
-            print("✅ Check 2 Passed: All publication years are strictly within 2022-2024.")
+            print("Check 2 Passed: All publication years are strictly within 2022-2024.")
     else:
-        print("⚠️ Warning: 'year' column missing from export.")
+        print("Warning: 'year' column missing from export.")
 
     # Check 3: ARR Threshold (> )
     if "arr_usd" in df.columns:
@@ -44,11 +44,11 @@ def validate_dataset():
         print(f"ℹ️ ARR Stats -> Minimum:  | Maximum: ")
         
         if len(invalid_arr) > 0:
-            print(f"❌ Validation Failed: Found {len(invalid_arr)} rows with ARR <= ,000,000.")
+            print(f"Validation Failed: Found {len(invalid_arr)} rows with ARR <= ,000,000.")
         else:
-            print("✅ Check 3 Passed: All rows have an ARR strictly greater than ,000,000.")
+            print("Check 3 Passed: All rows have an ARR strictly greater than ,000,000.")
     else:
-        print("⚠️ Warning: 'arr_usd' column missing from export.")
+        print("Warning: 'arr_usd' column missing from export.")
 
     print("\n--- SAMPLE DATA PREVIEW ---")
     preview_cols = [c for c in ["article_id", "title", "company_name", "year", "arr_usd", "category"] if c in df.columns]
